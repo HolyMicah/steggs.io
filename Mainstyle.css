@@ -79,7 +79,7 @@ label {
     *overflow: hidden;
   }
 
-@media screen and (max-width: 2560px) {
+@media screen and (min-width: 2560px) {
     .card{
         left: 28%;
     }
@@ -90,7 +90,7 @@ label {
         left: 320px;
     }
 }
-
+/* 
 @media screen and (min-width: 1920px) {
     .card{
         left: 28%;
@@ -101,6 +101,6 @@ label {
     #btnStart{
         left: 320px;
     }
-}
+} */
 
 /* 1920 x 1080 */
