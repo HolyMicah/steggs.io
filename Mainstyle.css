@@ -79,7 +79,7 @@ label {
     *overflow: hidden;
   }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 2560px) {
     .card{
         left: 28%;
     }
@@ -90,3 +90,17 @@ label {
         left: 320px;
     }
 }
+/* 
+@media screen and (min-width: 1920px) {
+    .card{
+        left: 28%;
+    }
+    .Steggs{
+        left: 1100px;
+    }
+    #btnStart{
+        left: 320px;
+    }
+} */
+
+/* 1920 x 1080 */

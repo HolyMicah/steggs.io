@@ -20,6 +20,7 @@ body {
     font-family: 'Spline Sans Mono', monospace;
     font-weight: 500;
     background-color:black;
+    display: flex;
 }
 
 .Steggs {
@@ -79,7 +80,7 @@ label {
     *overflow: hidden;
   }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 2560px) {
     .card{
         left: 28%;
     }
@@ -92,3 +93,17 @@ label {
 }
 
 /* 2560 x 1440 */
+
+/* @media screen and (min-width: 2560px) {
+    .card{
+        left: 28%;
+    }
+    .Steggs{
+        left: 1100px;
+    }
+    #btnStart{
+        left: 320px;
+    }
+} */
+
+/* 1920 x 1080 */
