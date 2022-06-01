@@ -56,8 +56,16 @@ body {
     border-color: none;
 }
 
-@media screen and (max-width: 1680px) {
+@media screen and (min-width: 1440px) {
     .card{
-
+        left: 28%;
+    }
+    .Steggs{
+        left: 1100px;
+    }
+    #btnStart{
+        left: 320px;
     }
 }
+
+/* 2560 x 1440 */
