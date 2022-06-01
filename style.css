@@ -49,4 +49,32 @@ body {
 .button:hover {
     color: #F14668 !important;
     border-color: none;
+<<<<<<< Updated upstream
 }
+=======
+}
+
+.boxs {
+    grid-template-columns:[first] 150px;
+    display: grid;
+    font-size:80px;
+    font-weight:bold;
+}
+label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+    position: relative;
+  }
+  input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    right: 20px;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+  }
+>>>>>>> Stashed changes
