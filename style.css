@@ -56,7 +56,7 @@ body {
     border-color: none;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
     .card{
         left: 28%;
     }
