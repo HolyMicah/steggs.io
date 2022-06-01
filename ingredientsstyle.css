@@ -1,0 +1,110 @@
+.card {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 20%;
+    box-shadow: 20px 20px 10px #F5EB53;
+    background-color:black;
+    display: flex;
+    
+}
+
+body {
+    font-family: 'Spline Sans Mono', monospace;
+    font-weight: 500;
+    color: white;
+    
+}
+
+.content {
+    font-family: 'Spline Sans Mono', monospace;
+    font-weight: 500;
+    background-color:black;
+}
+
+.Steggs {
+    position: relative;
+    left: 42%;
+    color: #9C48DD;
+    bottom: 350px;
+    font-size: 60px;
+    font-family: 'Spline Sans Mono', monospace;
+    font-weight: bolder;
+    display: flex;
+}
+.animate-animate {
+    animation: zoomInDown;
+    animation-duration: 8s;
+}
+
+#btnStart {  
+    background: #9C48DD;
+    border-color: #9C48DD;
+    font-weight: 500;
+    top: 350px;
+    left: 0%;
+    font-family: 'Spline Sans Mono', monospace;
+    position: relative;
+}
+#cardID {
+    box-shadow: -0px -0px 30px #9C48DD;
+    background-color:black;
+    color: white;
+}
+.button:hover {
+    color: #F14668 !important;
+    border-color: none; }
+
+.boxs {
+    grid-template-columns:[first] 150px;
+    display: grid;
+    font-size:80px;
+    font-weight:bold;
+}
+label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+    position: relative;
+  }
+  input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    right: 20px;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+  }
+
+@media screen and (min-width: 2560px) {
+    .card{
+        left: 28%;
+    }
+    .Steggs{
+        left: 1100px;
+    }
+    #btnStart{
+        left: 320px;
+    }
+}
+
+.hero {
+background-color:aquamarine;
+}
+/* 
+@media screen and (min-width: 1920px) {
+    .card{
+        left: 28%;
+    }
+    .Steggs{
+        left: 1100px;
+    }
+    #btnStart{
+        left: 320px;
+    }
+} */
+
+/* 1920 x 1080 */
