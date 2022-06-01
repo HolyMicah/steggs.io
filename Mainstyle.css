@@ -79,7 +79,7 @@ label {
     *overflow: hidden;
   }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 2560px) {
     .card{
         left: 28%;
     }
