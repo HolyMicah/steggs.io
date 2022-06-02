@@ -60,6 +60,8 @@ body {
     display: grid;
     font-size:80px;
     font-weight:bold;
+    justify-content: flex-start;
+    align-self: flex-start;
 }
 label {
     display: block;
@@ -93,6 +95,15 @@ label {
 
 .hero {
 background-color:aquamarine;
+}
+
+.column {
+    column-count: 1;
+    column-gap: 100px;
+    align-self:flex-start;
+    vertical-align: -2px;
+    margin: 0;
+    padding: 0;
 }
 /* 
 @media screen and (min-width: 1920px) {
