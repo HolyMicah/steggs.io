@@ -1,23 +1,30 @@
-var btnOne = $("#btnStart1")
-var btnTwo = $("#btnStart2")
-var btnThree =$("#btnsStart3")
-var btnFour =$("#btnStart4")
 
 $("#btnStart1").click(function(){
-    window.location.replace("citys.html")
+    window.location = "citys.html"
 });
 
 $("#btnStart2").click(function(){
-    window.location="ingredients.html"
+
+    window.location = "ingredients.html"
 });
 
 $("#btnStart3").click(function(){
-    window.location="results.html"
+    window.location = "results.html"
 });
 
 $("#btnStart4").click(function(){
     window.location = "index.html"
 });
+
+let boxes = $(".box").length;
+
+function save() {	
+    for(let i = 1; i <= boxes; i++){
+        var checkbox = document.getElementById(String(i));
+      localStorage.setItem("checkbox" + String(i), checkbox.checked);	
+    }
+  }
+
 
 
 
