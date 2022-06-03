@@ -34,6 +34,8 @@ $("#btnStart3").click(function(){
 
 
 
-let cityArray = [Seattle,Phoenix,Honolulu,Boise,Las Vegas,Portland,Houston,Los Angeles,DC]
+let cityArray = ["Seattle,Phoenix,Honolulu,Boise,Las Vegas,Portland,Houston,Los Angeles,DC"]
+
+let ingredientsArray = ["Eggs,Bread,Milk,Steak,Orange Juice,Rice,Butter"]
 
 
