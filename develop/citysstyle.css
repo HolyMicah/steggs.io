@@ -37,14 +37,12 @@ body {
     animation-duration: 8s;
 }
 
-#btnStart {  
-    background: #9C48DD;
-    border-color: #9C48DD;
+#btnStart2 {  
     font-weight: 500;
-    top: 350px;
-    left: 0%;
+    left: 47%;
+    top: 70%;
     font-family: 'Spline Sans Mono', monospace;
-    position: relative;
+    position: absolute;
 }
 #cardID {
     box-shadow: -0px -0px 30px #9C48DD;

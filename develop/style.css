@@ -37,15 +37,12 @@ body {
     animation: zoomInDown;
     animation-duration: 8s;
 }
-
-#btnStart {  
-    background: #F5EB53;
-    border-color: #F5EB53;
+#btnStart1 {  
     font-weight: 500;
-    top: 350px;
-    left: 0%;
     font-family: 'Spline Sans Mono', monospace;
-    position: relative;
+    position: absolute;
+    left: 47%;
+    top: 70%;
 }
 #cardID {
     box-shadow: -0px -0px 30px #F5EB53;
