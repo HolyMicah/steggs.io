@@ -36,3 +36,4 @@ $("#btnStart3").click(function(){
 
 let cityArray = [Seattle,Phoenix,Honolulu,Boise,Las Vegas,Portland,Houston,Los Angeles,DC]
 
+
