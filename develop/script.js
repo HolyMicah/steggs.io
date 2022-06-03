@@ -1,6 +1,6 @@
 
 $("#btnStart1").click(function(){
-    window.location = "citys.html"
+    window.location = "location.html"
 });
 
 $("#btnStart2").click(function(){
