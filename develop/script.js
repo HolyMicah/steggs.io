@@ -7,6 +7,13 @@ $("#btnStart1").click(function(){
     window.location.replace("citys.html")
 });
 
+$("#btnStart2").click(function(){
+    window.location="ingredients.html"
+});
+
+$("#btnStart3").click(function(){
+    window.location="results.html"
+});
 
 
 
@@ -28,3 +35,4 @@ $("#btnStart1").click(function(){
 
 
 let cityArray = [Seattle,Phoenix,Honolulu,Boise,Las Vegas,Portland,Houston,Los Angeles,DC]
+
