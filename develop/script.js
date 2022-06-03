@@ -15,6 +15,10 @@ $("#btnStart3").click(function(){
     window.location="results.html"
 });
 
+$("#btnStart4").click(function(){
+    window.location = "index.html"
+});
+
 
 
 
