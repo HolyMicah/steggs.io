@@ -1,10 +1,39 @@
 .card {
     width: 500px;
     height: 500px;
-    position: relative;
-    left: 20%;
+    position: absolute;
+    left: 38%;
     box-shadow: 20px 20px 10px #F5EB53;
     background-color:black;
+    display: flex;
+}
+
+#cardID {
+    box-shadow: -0px -0px 30px #FFA500;
+    background-color:black;
+    color: white;
+    position: absolute;
+    left: 38%;
+}
+
+#btnStart3 {  
+    background: #FFA500;
+    border-color: #FFA500;
+    font-weight: 500;
+    top: 70%;
+    left: 48%;
+    font-family: 'Spline Sans Mono', monospace;
+    position: absolute;
+}
+
+.Steggs {
+    position: absolute;
+    left: 45%;
+    top: 24%;
+    color: #FFA500;
+    font-size: 60px;
+    font-family: 'Spline Sans Mono', monospace;
+    font-weight: bolder;
     display: flex;
 }
 
@@ -21,37 +50,11 @@ body {
     background-color:black;
 }
 
-.Steggs {
-    position: absolute;
-    left: 32%;
-    top: 24%;
-    color: #FFA500;
-    font-size: 60px;
-    font-family: 'Spline Sans Mono', monospace;
-    font-weight: bolder;
-    display: flex;
-}
 .animate-animate {
     animation: zoomInDown;
     animation-duration: 8s;
 }
 
-#btnStart3 {  
-    background: #FFA500;
-    border-color: #FFA500;
-    font-weight: 500;
-    top: 70%;
-    left: 48%;
-    font-family: 'Spline Sans Mono', monospace;
-    position: absolute;
-}
-#cardID {
-    box-shadow: -0px -0px 30px #FFA500;
-    background-color:black;
-    color: white;
-    position: absolute;
-    left: 42%;
-}
 .button:hover {
     color: black !important;
     border-color: none; }
