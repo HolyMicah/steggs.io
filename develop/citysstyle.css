@@ -49,6 +49,14 @@
     top: 45%;
 }
 
+.zipcode {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    font-size: 52px;
+    color: #9C48DD;
+}
+
 body {
     font-family: 'Spline Sans Mono', monospace;
     font-weight: 500;
