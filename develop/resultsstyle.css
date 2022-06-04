@@ -20,14 +20,14 @@
     border-color: #A81919;
     font-weight: 500;
     top: 70%;
-    left: 45%;
+    left: 45.5%;
     font-family: 'Spline Sans Mono', monospace;
     position: absolute;
 }
 
-.Steggs {
+#results {
     position: absolute;
-    left: 41%;
+    left: 42.5%;
     top: 24%;
     color: #A81919;
     font-size: 60px;
