@@ -1,7 +1,7 @@
 .card {
     width: 500px;
     height: 500px;
-    position: absolute;
+    position: relative;
     left: 20%;
     box-shadow: 20px 20px 10px #DB800F;
     background-color:black;
@@ -37,19 +37,21 @@ body {
     animation-duration: 8s;
 }
 
-#btnStart {  
+#btnStart4 {  
     background: #A81919;
     border-color: #A81919;
     font-weight: 500;
-    top: 350px;
-    left: 0%;
+    top: 70%;
+    left: 50%;
     font-family: 'Spline Sans Mono', monospace;
-    position: relative;
+    position: absolute;
 }
 #cardID {
     box-shadow: -0px -0px 30px #A81919;
     background-color:black;
     color: white;
+    position: absolute;
+    left: 42%;
 }
 .button:hover {
     color: black !important;
