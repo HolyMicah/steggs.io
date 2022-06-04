@@ -121,6 +121,7 @@ label {
     }
     #btnStart{
         left: 320px;
+        top: 50%;
     }
 }
 

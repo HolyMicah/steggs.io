@@ -3,7 +3,9 @@ $("#btnStart1").click(function(){
 });
 
 $("#btnStart2").click(function(){
-    window.location = "results.html"
+    let searchIpt = $(".searchBar").val();
+    localStorage.setItem("input", searchIpt);
+    window.location = "results.html";
 });
 
 $("#btnStart4").click(function(){
@@ -11,9 +13,7 @@ $("#btnStart4").click(function(){
 });
 
 
-
-
-// 
+ 
 
 
 
@@ -36,7 +36,7 @@ $("#btnStart4").click(function(){
 
 
 
-      // var box1 = $("#box-1").val();
+// var box1 = $("#box-1").val();
 // var box2 = $("#box-2").val();
 // var box3 = $("#box-3").val();
 // var box4 = $("#box-4").val();
