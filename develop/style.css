@@ -24,8 +24,9 @@ body {
 }
 
 .Steggs {
-    position: relative;
+    position: absolute;
     left: 42%;
+    top: 24%;
     color: #F5EB53;
     bottom: 350px;
     font-size: 60px;

@@ -5,7 +5,7 @@
     left: 20%;
     box-shadow: 20px 20px 10px #F5EB53;
     background-color:black;
-   display: flex;
+    display: flex;
 }
 
 body {
@@ -22,10 +22,10 @@ body {
 }
 
 .Steggs {
-    position: relative;
-    left: 42%;
+    position: absolute;
+    left: 32%;
+    top: 24%;
     color: #FFA500;
-    bottom: 350px;
     font-size: 60px;
     font-family: 'Spline Sans Mono', monospace;
     font-weight: bolder;
@@ -41,7 +41,7 @@ body {
     border-color: #FFA500;
     font-weight: 500;
     top: 70%;
-    left: 49%;
+    left: 48%;
     font-family: 'Spline Sans Mono', monospace;
     position: absolute;
 }
