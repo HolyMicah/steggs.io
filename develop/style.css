@@ -33,6 +33,15 @@
     font-weight: bolder;
 }
 
+.column {
+    column-count: 1;
+    column-gap: 100px;
+    align-self:flex-start;
+    vertical-align: -2px;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Spline Sans Mono', monospace;
     font-weight: 500;
@@ -44,8 +53,9 @@ body {
     font-family: 'Spline Sans Mono', monospace;
     font-weight: 500;
     background-color:black;
-    display: flex;
+    font-size: 25px;
 }
+
 
 .animate-animate {
     animation: zoomInDown;

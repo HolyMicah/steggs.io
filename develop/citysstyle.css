@@ -5,7 +5,6 @@
     left: 38%;
     box-shadow: 20px 20px 10px #F5EB53;
     background-color:black;
-    display: flex;
     
 }
 #cardID {
@@ -17,7 +16,7 @@
 }
 #btnStart2 {  
     font-weight: 500;
-    left: 47%;
+    left: 45%;
     top: 70%;
     font-family: 'Spline Sans Mono', monospace;
     position: absolute;
@@ -33,6 +32,23 @@
     font-weight: bolder;
 }
 
+.column {
+    column-count: 1;
+    column-gap: 100px;
+    align-self:flex-start;
+    vertical-align: -2px;
+    margin: 0;
+    padding: 0;
+}
+
+.searchBar {
+    height: 60px;
+    width: 95%;
+    position: absolute;
+    left: 3%;
+    top: 45%;
+}
+
 body {
     font-family: 'Spline Sans Mono', monospace;
     font-weight: 500;
@@ -44,8 +60,8 @@ body {
     font-family: 'Spline Sans Mono', monospace;
     font-weight: 500;
     background-color:black;
+    font-size: 25px;
 }
-
 .animate-animate {
     animation: zoomInDown;
     animation-duration: 8s;
@@ -97,14 +113,6 @@ label {
 background-color:aquamarine;
 }
 
-.column {
-    column-count: 1;
-    column-gap: 100px;
-    align-self:flex-start;
-    vertical-align: -2px;
-    margin: 0;
-    padding: 0;
-}
 /* 
 @media screen and (min-width: 1920px) {
     .card{
