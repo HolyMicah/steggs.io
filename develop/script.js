@@ -4,39 +4,76 @@ $("#btnStart1").click(function(){
     window.location = "citys.html"
 });
 
+
 $("#btnStart2").click(function(){
-    
-    let searchIpt = $(".searchBar").val();
-
-    var settings = {
-      "async": true,
-      "crossDomain": true,
-      "url": "https://api.kroger.com/v1/locations?filter.zipCode.near=" + searchIpt,
-      "method": "GET",
-      "headers": {
-        "Accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vYXBpLmtyb2dlci5jb20vdjEvLndlbGwta25vd24vandrcy5qc29uIiwia2lkIjoiWjRGZDNtc2tJSDg4aXJ0N0xCNWM2Zz09IiwidHlwIjoiSldUIn0.eyJhdWQiOiJzdGVnZ3Npby04MjhmZmFkM2UzOWNhZGVmNThhNTdlYWRhMWJkM2UwMDU4NDI3NjQ0MzcyNDI3ODUyMCIsImV4cCI6MTY1NDQ2MzgyMywiaWF0IjoxNjU0NDYyMDE4LCJpc3MiOiJhcGkua3JvZ2VyLmNvbSIsInN1YiI6IjU4MTc4NjNhLTUzMTYtNThkYi1iNmY1LTBjYjI1OTVlNTQxMCIsInNjb3BlIjoiIiwiYXV0aEF0IjoxNjU0NDYyMDIzMDc5MzYyOTQzLCJhenAiOiJzdGVnZ3Npby04MjhmZmFkM2UzOWNhZGVmNThhNTdlYWRhMWJkM2UwMDU4NDI3NjQ0MzcyNDI3ODUyMCJ9.inl5doPwRsCqaD1_CZulfKwyn4szSXyr5vTOm2RCUfl_98oueKSLr8o4PXZkqxsVaYVeZGt3__5ASwvKilPZnlNMII3pIWgfupaMOXsblWnVW7vorWR0lKFXPWqAz7rp2qd88RlCPRRw25hdM3KHZG-r_0OL41Yy6JE2eyFw8TSxc7HYJ5DkXOuSkOQeBa11Q5ENV6PqeoTCXW2UY30XBFZ2CI3ggacGg0_CaI9vN046367__m6QAkyQqssHlgsU-DAx-XF2Z_H2TpJ0qT01rGzMFH0HgSWEg-t2IINi2DsuVY70ZONVikqUUj7g6PrxCifB4ZOY5ZmiTtr5jAsUog"
-      }
-    };
-    
-    $.ajax(settings).done(function (response) {
-      console.log(response);
-    });
-
-
-
-    localStorage.setItem("input", searchIpt);
-    // window.location = "results.html";
+    pageChange();
 });
+
 
 $("#btnStart4").click(function(){
     window.location = "index.html"
 });
 
 
+$("#submitIpt").click(function(){
+  apiCall();
+})
+
+
+
+
 
 
  
+
+
+
+
+
+
+function apiCall(){
+    let searchIpt = $(".searchBar").val();
+    localStorage.setItem("input", searchIpt);
+
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.kroger.com/v1/locations?filter.zipCode.near=" + searchIpt,
+  "method": "GET",
+  "headers": {
+    "Accept": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vYXBpLmtyb2dlci5jb20vdjEvLndlbGwta25vd24vandrcy5qc29uIiwia2lkIjoiWjRGZDNtc2tJSDg4aXJ0N0xCNWM2Zz09IiwidHlwIjoiSldUIn0.eyJhdWQiOiJzdGVnZ3Npby04MjhmZmFkM2UzOWNhZGVmNThhNTdlYWRhMWJkM2UwMDU4NDI3NjQ0MzcyNDI3ODUyMCIsImV4cCI6MTY1NDYzNjE0MCwiaWF0IjoxNjU0NjM0MzM1LCJpc3MiOiJhcGkua3JvZ2VyLmNvbSIsInN1YiI6IjU4MTc4NjNhLTUzMTYtNThkYi1iNmY1LTBjYjI1OTVlNTQxMCIsInNjb3BlIjoiIiwiYXV0aEF0IjoxNjU0NjM0MzQwODg1NDkzMTQxLCJhenAiOiJzdGVnZ3Npby04MjhmZmFkM2UzOWNhZGVmNThhNTdlYWRhMWJkM2UwMDU4NDI3NjQ0MzcyNDI3ODUyMCJ9.lABfTXN0MLAIjaSJPZmpeeS0tGOlT9AoOxwwijn5cZ_YLCJdY6cNUsOns6wuRdfZ6H7D2gQv7otld7-9DsX0Wv9W4TPtFKA0XsPebaqmPj5jSTSJge637PgQVrk85SQYqQrcwOZzOFH5UHHWBWL_87oe4RDYQthGbuBU3ame1iSonYvb3z-IBUSv0m8PLgIAUDi5YIjgAqvdcEJFgTQ3BnkhVm0tegbcTnw_Va6DSYxtFOOCS1LcIgNY_r9kbAXo2wMtkxjoCHfByJikC8fwRvZpknNsHRyzp4WcpCkb4RuDz4kc1s2OAHge-6iEq2lb_wR35hCjitM1_NwOcWkZDQ"
+  }
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+  
+});
+};
+
+
+function pageChange(){
+  window.location = "results.html";
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // var box1 = $("#box-1").val();
