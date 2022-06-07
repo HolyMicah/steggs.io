@@ -30,6 +30,10 @@
     position: relative;
 }
 
+li{
+    color: white;
+}
+
 .Steggs {
     position: absolute;
     left: 44%;
