@@ -15,7 +15,7 @@ $("#btnStart2").click(function(){
       "method": "GET",
       "headers": {
         "Accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vYXBpLmtyb2dlci5jb20vdjEvLndlbGwta25vd24vandrcy5qc29uIiwia2lkIjoiWjRGZDNtc2tJSDg4aXJ0N0xCNWM2Zz09IiwidHlwIjoiSldUIn0.eyJhdWQiOiJzdGVnZ3Npby04MjhmZmFkM2UzOWNhZGVmNThhNTdlYWRhMWJkM2UwMDU4NDI3NjQ0MzcyNDI3ODUyMCIsImV4cCI6MTY1NDQ2MzgyMywiaWF0IjoxNjU0NDYyMDE4LCJpc3MiOiJhcGkua3JvZ2VyLmNvbSIsInN1YiI6IjU4MTc4NjNhLTUzMTYtNThkYi1iNmY1LTBjYjI1OTVlNTQxMCIsInNjb3BlIjoiIiwiYXV0aEF0IjoxNjU0NDYyMDIzMDc5MzYyOTQzLCJhenAiOiJzdGVnZ3Npby04MjhmZmFkM2UzOWNhZGVmNThhNTdlYWRhMWJkM2UwMDU4NDI3NjQ0MzcyNDI3ODUyMCJ9.inl5doPwRsCqaD1_CZulfKwyn4szSXyr5vTOm2RCUfl_98oueKSLr8o4PXZkqxsVaYVeZGt3__5ASwvKilPZnlNMII3pIWgfupaMOXsblWnVW7vorWR0lKFXPWqAz7rp2qd88RlCPRRw25hdM3KHZG-r_0OL41Yy6JE2eyFw8TSxc7HYJ5DkXOuSkOQeBa11Q5ENV6PqeoTCXW2UY30XBFZ2CI3ggacGg0_CaI9vN046367__m6QAkyQqssHlgsU-DAx-XF2Z_H2TpJ0qT01rGzMFH0HgSWEg-t2IINi2DsuVY70ZONVikqUUj7g6PrxCifB4ZOY5ZmiTtr5jAsUog"
+        "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vYXBpLmtyb2dlci5jb20vdjEvLndlbGwta25vd24vandrcy5qc29uIiwia2lkIjoiWjRGZDNtc2tJSDg4aXJ0N0xCNWM2Zz09IiwidHlwIjoiSldUIn0.eyJhdWQiOiJzdGVnZ3Npby04MjhmZmFkM2UzOWNhZGVmNThhNTdlYWRhMWJkM2UwMDU4NDI3NjQ0MzcyNDI3ODUyMCIsImV4cCI6MTY1NDU1ODU4OSwiaWF0IjoxNjU0NTU2Nzg0LCJpc3MiOiJhcGkua3JvZ2VyLmNvbSIsInN1YiI6IjU4MTc4NjNhLTUzMTYtNThkYi1iNmY1LTBjYjI1OTVlNTQxMCIsInNjb3BlIjoiIiwiYXV0aEF0IjoxNjU0NTU2Nzg5NjM5NDk3MzMzLCJhenAiOiJzdGVnZ3Npby04MjhmZmFkM2UzOWNhZGVmNThhNTdlYWRhMWJkM2UwMDU4NDI3NjQ0MzcyNDI3ODUyMCJ9.wc3OVDCadZZWIK2f_RdtdCa4zdg1nTd9rqSWBp0fQh4bfiYQilcdsG1PZl0eJ2Ib_xmI5QMqaMKp337pfF381FfoQnBAOCnVTkCA25tsi1pITb80gDDtSq2wUdgwM2fhfxyOrgE30hUzhN4QoABWlHmRbKfAZBKhyrPsQuNxagsHaDyCiTXUgQfoTz0KM5Ip9iPn7XlImLSrXW4UMyv1W1PluvThf2BxVlGG8ZBAY_jN4DZutKoXU5f89D9HY_MeHrBjE82phkjcDOwfLhZtEcZ9t4hVQh_npNgqHYV1OsUa9kPHNsQj64wIVIO_wstgYtUbKvHWuHKFmKl-qPOc8w"
       }
     };
     
@@ -33,6 +33,9 @@ $("#btnStart4").click(function(){
     window.location = "index.html"
 });
 
+// var settings = [];
+// settings.push(storeDisplay);
+// I made this as an attempt to push the store loaction response to the loccationDisplay element in the HTML
 
 
 
