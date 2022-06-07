@@ -25,8 +25,8 @@ $("#btnStart2").click(function(){
 
 
 
-    localStorage.setItem("input", searchIpt);
-    // window.location = "results.html";
+    localStorage.setItem("input", searchIpt);  
+    // window.location = "results.html";  
 });
 
 $("#btnStart4").click(function(){
