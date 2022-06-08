@@ -1,3 +1,7 @@
+ul {
+    position: fixed;
+    bottom: 35%;
+}
 .card {
     width: 500px;
     height: 500px;
@@ -17,7 +21,7 @@
 #btnStart2 {  
     font-weight: 500;
     left: 45.5%;
-    top: 70%;
+    top: 77%;
     font-family: 'Spline Sans Mono', monospace;
     position: absolute;
 }
