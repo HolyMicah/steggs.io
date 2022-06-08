@@ -1,3 +1,4 @@
+var storeNames = $("#stores")
 
 
 $("#btnStart1").click(function(){
@@ -7,22 +8,7 @@ $("#btnStart1").click(function(){
 
 $("#btnStart2").click(function(){
   apiCall();
-    
 });
-
-
-
-
-
-
-
-// function localInput(){
-//   var listItem = document.createElement('li');
-//   var zip = localStorage.getItem("input");
-//   $(listItem).append(zip);
-// };
-
-
 
 
 
@@ -35,23 +21,37 @@ function apiCall(){
   localStorage.setItem("input", searchIpt);
 
 
-var settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "https://api.kroger.com/v1/locations?filter.zipCode.near=" + searchIpt, 
-  "method": "GET",
-  "headers": {
-    "Accept": "application/json",
-    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vYXBpLmtyb2dlci5jb20vdjEvLndlbGwta25vd24vandrcy5qc29uIiwia2lkIjoiWjRGZDNtc2tJSDg4aXJ0N0xCNWM2Zz09IiwidHlwIjoiSldUIn0.eyJhdWQiOiJzdGVnZ3Npby04MjhmZmFkM2UzOWNhZGVmNThhNTdlYWRhMWJkM2UwMDU4NDI3NjQ0MzcyNDI3ODUyMCIsImV4cCI6MTY1NDY0MTM4OSwiaWF0IjoxNjU0NjM5NTg0LCJpc3MiOiJhcGkua3JvZ2VyLmNvbSIsInN1YiI6IjU4MTc4NjNhLTUzMTYtNThkYi1iNmY1LTBjYjI1OTVlNTQxMCIsInNjb3BlIjoiIiwiYXV0aEF0IjoxNjU0NjM5NTg5MzcwMTczOTEwLCJhenAiOiJzdGVnZ3Npby04MjhmZmFkM2UzOWNhZGVmNThhNTdlYWRhMWJkM2UwMDU4NDI3NjQ0MzcyNDI3ODUyMCJ9.ZacTlW0QA9lbSiMzm2h-GUvMAmRMY8aDYzVsXKtIJXtvAWMrHJ6Mgcvm3HXIsWrOejkfzjj1c4LOIf_pPcmTiEp3CEiyknKSWSNMS20vMFc4K36D3c8upiglWYRKTNAqUWZGKt-2do4x7xpaFXTU8Fcs1XRRytGA-EJ67n4P4RGQ6onqylgLJH64MoW2EOit3mnQrghK6PUaXqFezcD1LZqr9teMhVFWcm2v4fG3XbCdI1GyA7jBuvqK_TWBWmN0EOU3n2ZZMmliNEOCIy6tq1vaDxfeYmLDutQZ2bp2_FTTVW9P9HGlYqrK8YJ622OLpNnOdlqKOVOYzVpE7leBBw"
-  }
+  var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://api.kroger.com/v1/locations?filter.zipCode.near=" + searchIpt, 
+    "method": "GET",
+    "headers": {
+      "Accept": "application/json",
+      "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vYXBpLmtyb2dlci5jb20vdjEvLndlbGwta25vd24vandrcy5qc29uIiwia2lkIjoiWjRGZDNtc2tJSDg4aXJ0N0xCNWM2Zz09IiwidHlwIjoiSldUIn0.eyJhdWQiOiJzdGVnZ3Npby04MjhmZmFkM2UzOWNhZGVmNThhNTdlYWRhMWJkM2UwMDU4NDI3NjQ0MzcyNDI3ODUyMCIsImV4cCI6MTY1NDY0OTcxOSwiaWF0IjoxNjU0NjQ3OTE0LCJpc3MiOiJhcGkua3JvZ2VyLmNvbSIsInN1YiI6IjU4MTc4NjNhLTUzMTYtNThkYi1iNmY1LTBjYjI1OTVlNTQxMCIsInNjb3BlIjoiIiwiYXV0aEF0IjoxNjU0NjQ3OTE5NTU4NzA4MzExLCJhenAiOiJzdGVnZ3Npby04MjhmZmFkM2UzOWNhZGVmNThhNTdlYWRhMWJkM2UwMDU4NDI3NjQ0MzcyNDI3ODUyMCJ9.sIXdzbiTLeBTIhpwbeLzneqIm3VrFZejfCEtI8uOxT1iYTI1sDNIJMCp4VPxYIgK-1B_XQnSmAfIEX7m85j6MJCz4XvyT8r2lrhdoDfd3PfJxX9Flrrf0egonm22Ddx8pwtPZGCzyQFyNzdnCvl5oTj4jHzglMrKMdIRPwRDIAwZjyqvIXR3G2GqXm_F5HWIuY9T2ezosIez82xZhyUStXS7oyLb8NJVJHAjBTsG6MeiCwh1QLgmi_Labr4gr4qeiqt3U9cuQVDEWZq71y7N5icZ-xn54zxOAfuWhDZ2YJ3l_EXOlBm5iygOKDnR50e-AV7fxwiOFsRJitgL1WsHDw"
+    }
+  };
+
+  
+
+  $.ajax(settings).done(function (data) {
+    console.log(data.data.length);
+    let nameList = data.data;
+    for(var i = 0; i < data.data.length; i++){
+      var newEle = document.createElement('li');
+      newEle.innerText = nameList[i].name;
+      newEle.classList.add("names");
+      storeNames.append(newEle);
+     
+      
+    };
+  })
 };
 
-$.ajax(settings).done(function (response) {
- console.log(response);
-})
-};
 
-
+// function pageChange(){
+//   window.location = "results.html";
+// };
 
 
 

@@ -30,8 +30,10 @@
     position: relative;
 }
 
-li{
+.names{
     color: white;
+    font-family: 'Spline Sans Mono', monospace;
+    font-size: 15px;
 }
 
 .Steggs {
