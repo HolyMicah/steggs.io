@@ -1,12 +1,6 @@
 # steggs.io
-Hello World
 
-## User Story
 
-As A person who like to budget for food,
-I WANT to select individual ingredients,
-SO THAT I can view the cost of these ingredients.
+link to the deployed URl: https://holymicah.github.io/steggs.io/
 
-## Acceptance Criteria
-GIVEN I am access the Landing Page and be presented with About Us inormation.
-WHEN on the Landing Page
+We still have features and things we will be adding for future updates.
